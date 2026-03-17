@@ -7,11 +7,11 @@
 @use './components/Header' as *;
 @use './components/Footer' as *;
 @use './components/ErrorPage' as *;
+@use './components/ProjectCard' as *;
 
 // Import des sections
 @use './sections/About' as *;
 @use './sections/Contact' as *;
-@use './sections/ProjectCard' as *;
 
 //Import des pages
 @use './pages/Project' as *;

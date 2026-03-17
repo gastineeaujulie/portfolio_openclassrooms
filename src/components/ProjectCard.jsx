@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import '../style/sections/ProjectCard.scss';
+import '../style/components/ProjectCard.scss';
 
 export default function ProjectCard({ project }) {
   const navigate = useNavigate();

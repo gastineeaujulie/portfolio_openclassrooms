@@ -14,7 +14,7 @@ export default function Project() {
     <section className="project-detail">
       <h1>{project.title}</h1>
       <p>{project.description}</p>
-      <div className="projects-tech">
+      <div className="project-tech">
         {project.tech.map((tech, index) => (
           <span key={index}>{tech}</span>
         ))}

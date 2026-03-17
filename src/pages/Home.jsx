@@ -1,10 +1,18 @@
+import { useState } from 'react';
 import { projects } from '../data/projects.js';
 import Button from '../components/Button.jsx';
 import About from '../sections/About.jsx';
-import ProjectCard from '../sections/ProjectCard.jsx';
+import ProjectCard from '../components/ProjectCard.jsx';
 import '../style/pages/Home.scss';
 
 export default function Home() {
+  const [filter, setFilter] = useState('Tous');
+
+  const filteredProjects =
+    filter === 'Tous'
+      ? projects
+      : projects.filter((project) => project.category === filter);
+
   return (
     <>
       <section className="home">
@@ -26,8 +34,21 @@ export default function Home() {
 
       <section className="home-projects">
         <h2>Mes projets</h2>
+
+        <div className="project-filters">
+          {['Tous', 'Front-end', 'Back-end', 'SEO'].map((category) => (
+            <button
+              key={category}
+              className={filter === category ? 'active' : ''}
+              onClick={() => setFilter(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
         <div className="projects-grid">
-          {projects.map((project) => (
+          {filteredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>

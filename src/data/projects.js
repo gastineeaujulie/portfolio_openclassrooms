@@ -9,6 +9,7 @@ export const projects = [
       'https://github.com/gastineeaujulie/kasa_project.git',
       'https://gastineeaujulie.github.io/kasa_project/',
     ],
+    category: 'Front-end',
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const projects = [
       'https://github.com/gastineeaujulie/Nina-Carducci-Dev.git ',
       'https://gastineeaujulie.github.io/Nina-Carducci-Dev/',
     ],
+    category: 'Back-end',
   },
   {
     id: 3,
@@ -28,5 +30,6 @@ export const projects = [
       'API RESTful pour un site de notation de livres. Authentification sécurisée, gestion CRUD complète et optimisation des images uploadées.',
     tech: ['Node.js', 'Express', 'MongoDB'],
     link: 'https://github.com/gastineeaujulie/Mon_vieux_grimoire.git ',
+    category: 'SEO',
   },
 ];
