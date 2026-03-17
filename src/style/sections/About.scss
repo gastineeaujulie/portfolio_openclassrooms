@@ -1,0 +1,51 @@
+// src/style/sections/About.scss
+
+.about {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.about-skills {
+    margin-top: 2rem;
+}
+
+.about-skills h3 {
+    margin-bottom: 1rem;
+}
+
+.about-skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.about-skills li {
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
