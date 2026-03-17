@@ -1,0 +1,23 @@
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+
+.btn {
+  @include flex-center;
+  padding: 0.75rem 1.5rem;
+  background-color: $color-primary;
+  color: $text-primary;
+  font-weight: $font-bold;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $color-accent-pink;
+  }
+
+  @include mobile {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}

@@ -1,0 +1,44 @@
+// Palette de couleurs
+
+// Fonds
+$bg-primary: #0f0f0f; // Onyx
+$bg-section: #082900; // Black Forest
+
+// Branding
+$color-primary: #8a4f7d; // Grape Soda (dominante)
+
+// Accents
+$color-accent-pink: #ffb2e6; // Blush Pop (décoratif uniquement)
+$color-accent-green: #7ea172; // Sage Green
+
+// Texte
+$text-primary: #f5f0ff; // blanc cassé
+$text-secondary: #c4b5fd; // lavande clair
+
+// Typographie
+
+// Fonts
+$font-logo: 'Playfair Display', serif;
+$font-title: 'Playfair Display', serif;
+$font-alt-title: 'Crimson Text', serif;
+$font-body: 'Open Sans', sans-serif;
+
+// Poids
+$font-bold: 700;
+$font-regular: 400;
+
+// Tailles
+$font-size-sm: 14px;
+$font-size-base: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 32px;
+
+// Layout
+
+$max-width: 1200px;
+$border-radius: 10px;
+
+//  Breakpoints (mobile-first)
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

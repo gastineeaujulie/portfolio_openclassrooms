@@ -1,0 +1,49 @@
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+
+.error-page {
+  @include flex-center;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 8rem;
+
+  .error-title {
+    font-weight: $font-bold;
+    color: $color-primary;
+    font-size: 18rem; //288px
+    margin: 0;
+  }
+
+  .error-page p {
+    font-size: 2.25rem; //36px
+    color: $text-secondary;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .back-home {
+    margin-bottom: 6.25rem; //100px
+
+    .back-home-link {
+      font-size: 1.125rem; //18px
+      color: $text-primary;
+      font-weight: 500;
+    }
+  }
+
+  @include mobile {
+    .error-title {
+      font-size: 6rem; //96px
+    }
+
+    .error-page p {
+      font-size: 1.125rem; //18px
+    }
+
+    .back-home {
+      .back-home-link {
+        font-size: 0.875rem; //14px
+      }
+    }
+  }
+}

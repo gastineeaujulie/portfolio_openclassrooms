@@ -1,0 +1,28 @@
+// Flex center
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Responsive mobile
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+// Responsive tablet
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+// Bouton style
+@mixin button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
