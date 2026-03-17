@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
     <div className="project-card" onClick={handleClick}>
       <div className="card-content">
         <h3>{project.title}</h3>
-        <p>{project.description}</p>
+        <p>{project.resume}</p>
 
         <div className="project-tech">
           {project.tech.map((tech, index) => (
