@@ -6,11 +6,13 @@
 // Import des composants
 @use './components/Header' as *;
 @use './components/Footer' as *;
-@use './components/ProjectCard' as *;
 @use './components/ErrorPage' as *;
 
 // Import des sections
-@use './sections/Home' as *;
 @use './sections/About' as *;
-@use './sections/Projects' as *;
 @use './sections/Contact' as *;
+@use './sections/ProjectCard' as *;
+
+//Import des pages
+@use './pages/Project' as *;
+@use './pages/Home' as *;

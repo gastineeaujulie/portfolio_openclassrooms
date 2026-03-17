@@ -1,6 +1,8 @@
-import '../style/sections/Home.scss';
-import Button from '../components/Button';
-import About from './About.jsx';
+import { projects } from '../data/projects.js';
+import Button from '../components/Button.jsx';
+import About from '../sections/About.jsx';
+import ProjectCard from '../sections/ProjectCard.jsx';
+import '../style/pages/Home.scss';
 
 export default function Home() {
   return (
@@ -17,8 +19,18 @@ export default function Home() {
           <Button to="/contact">Me contacter</Button>
         </div>
       </section>
-      <section className="about">
+
+      <section className="home-about">
         <About />
+      </section>
+
+      <section className="home-projects">
+        <h2>Mes projets</h2>
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </section>
     </>
   );

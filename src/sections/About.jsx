@@ -1,4 +1,3 @@
-// src/sections/About.jsx
 import '../style/sections/About.scss';
 
 export default function About() {

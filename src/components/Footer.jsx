@@ -1,3 +1,9 @@
-export default function About() {
-  return <div>About page</div>;
+import '../style/components/Footer.scss';
+
+export default function Footer() {
+  return (
+    <div className="footer">
+      <p>© 2026 Julie Gastineau — Tous droits réservés</p>
+    </div>
+  );
 }
