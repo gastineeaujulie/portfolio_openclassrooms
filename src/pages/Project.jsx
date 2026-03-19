@@ -13,6 +13,16 @@ export default function Project() {
   return (
     <section className="project-detail">
       <h1>{project.title}</h1>
+
+      {project.image && (
+        <div className="project-image">
+          <img
+            src={project.image}
+            alt={`Capture d'écran du projet ${project.title}`}
+          />
+        </div>
+      )}
+
       <div className="project-tech">
         {project.tech.map((tech, index) => (
           <span key={index}>{tech}</span>

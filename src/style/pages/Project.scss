@@ -8,6 +8,21 @@
     width: 100%;
     padding: 120px 5% 80px 5%;
 
+    .project-image {
+        width: 100%;
+        max-width: 900px;
+        margin: 30px auto;
+        border-radius: $border-radius;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
     h1 {
         font-family: $font-title;
         font-weight: $font-bold;

@@ -25,7 +25,7 @@ export const projects = [
     ],
     github: 'https://github.com/gastineeaujulie/kasa_project.git',
     live: 'https://gastineeaujulie.github.io/kasa_project/',
-
+    image: '/src/assets/kasa.png',
     category: 'Front-end',
   },
   {
@@ -54,7 +54,7 @@ export const projects = [
     ],
     github: 'https://github.com/gastineeaujulie/Nina-Carducci-Dev.git ',
     live: 'https://gastineeaujulie.github.io/Nina-Carducci-Dev/',
-
+    image: '/src/assets/nina.png',
     category: 'SEO',
   },
   {
@@ -74,6 +74,7 @@ export const projects = [
       'Ajouter une pagination sur les listes de livres, mettre en place des tests unitaires sur les routes API, et renforcer la sécurité avec une gestion plus fine des rôles utilisateurs.',
     tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'API RESTful'],
     github: 'https://github.com/gastineeaujulie/Mon_vieux_grimoire.git ',
+    image: '/src/assets/grimoire.png',
     category: 'Back-end',
   },
 ];

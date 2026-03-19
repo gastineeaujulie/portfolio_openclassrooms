@@ -1,4 +1,5 @@
 import Button from '../components/Button.jsx';
+import '../style/sections/Contact.scss';
 
 export default function Contact() {
   return (
@@ -6,10 +7,14 @@ export default function Contact() {
       <h2>Contact</h2>
       <p>Une idée de projet ? Contactez-moi !</p>
 
-      <form className="contact-form">
-        <input type="text" placeholder="Nom" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Message" required></textarea>
+      <form
+        className="contact-form"
+        action="https://formspree.io/f/xaqpvjle"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Nom" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
         <Button type="submit">Envoyer</Button>
       </form>
 
