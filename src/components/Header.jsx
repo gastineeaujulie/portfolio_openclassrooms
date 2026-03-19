@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <h2 className="logo">JG</h2>
+        <span className="logo">JG</span>
 
         {/* Burger */}
         <div

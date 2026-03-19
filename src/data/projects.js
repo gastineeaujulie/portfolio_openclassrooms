@@ -55,7 +55,7 @@ export const projects = [
     github: 'https://github.com/gastineeaujulie/Nina-Carducci-Dev.git ',
     live: 'https://gastineeaujulie.github.io/Nina-Carducci-Dev/',
 
-    category: 'Back-end',
+    category: 'SEO',
   },
   {
     id: 3,
@@ -69,11 +69,11 @@ export const projects = [
     achievement:
       "Mise en place d'un serveur Express, modélisation des données avec Mongoose, implémentation des opérations CRUD, système d'authentification sécurisé, gestion de l'upload et optimisation automatique des images (Green Code), et structuration du code selon l'architecture MVC.",
     result:
-      "Amélioration significative des scores Lighthouse en performance, accessibilité et SEO, temps de chargement réduit grâce à l'optimisation des images, référencement local activé et bugs fonctionnels corrigés — le tout documenté dans un rapport livré au client.",
+      "API back-end complète et fonctionnelle, connectée avec succès au front-end React existant. Authentification sécurisée opérationnelle, gestion des livres et notations fonctionnelle, et images optimisées automatiquement pour réduire l'empreinte écologique du site. ",
     propositions:
       'Ajouter une pagination sur les listes de livres, mettre en place des tests unitaires sur les routes API, et renforcer la sécurité avec une gestion plus fine des rôles utilisateurs.',
     tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'API RESTful'],
     github: 'https://github.com/gastineeaujulie/Mon_vieux_grimoire.git ',
-    category: 'SEO',
+    category: 'Back-end',
   },
 ];

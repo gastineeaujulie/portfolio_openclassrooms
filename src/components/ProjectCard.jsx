@@ -9,7 +9,7 @@ export default function ProjectCard({ project }) {
   };
 
   return (
-    <section className="project-card" onClick={handleClick}>
+    <article className="project-card" onClick={handleClick}>
       <div className="card-content">
         <h3>{project.title}</h3>
         <p>{project.resume}</p>
@@ -20,6 +20,6 @@ export default function ProjectCard({ project }) {
           ))}
         </div>
       </div>
-    </section>
+    </article>
   );
 }
