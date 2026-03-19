@@ -1,6 +1,11 @@
 @use './global/variables' as *;
 @use './global/mixins' as *;
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
   display: flex;
   flex-direction: column;

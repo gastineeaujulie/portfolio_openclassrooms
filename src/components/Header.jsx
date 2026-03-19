@@ -25,21 +25,21 @@ export default function Header() {
           <ul className="nav-list">
             <li>
               <Link to="/" onClick={() => setMenuOpen(false)}>
-                Home
+                Accueil
               </Link>
             </li>
             <li>
-              <Link to="/about" onClick={() => setMenuOpen(false)}>
-                About
+              <Link to="/#about" onClick={() => setMenuOpen(false)}>
+                À propos
               </Link>
             </li>
             <li>
-              <Link to="/projects" onClick={() => setMenuOpen(false)}>
-                Projects
+              <Link to="/#projects" onClick={() => setMenuOpen(false)}>
+                Projets
               </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={() => setMenuOpen(false)}>
+              <Link to="/#contact" onClick={() => setMenuOpen(false)}>
                 Contact
               </Link>
             </li>

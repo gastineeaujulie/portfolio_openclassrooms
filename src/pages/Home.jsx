@@ -1,21 +1,26 @@
-import { useState } from 'react';
-import { projects } from '../data/projects.js';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Button from '../components/Button.jsx';
 import About from '../sections/About.jsx';
-import ProjectCard from '../components/ProjectCard.jsx';
+import Projects from '../sections/Projects.jsx';
+import Contact from '../sections/Contact.jsx';
 import '../style/pages/Home.scss';
 
 export default function Home() {
-  const [filter, setFilter] = useState('Tous');
+  const location = useLocation();
 
-  const filteredProjects =
-    filter === 'Tous'
-      ? projects
-      : projects.filter((project) => project.category === filter);
+  useEffect(() => {
+    if (location.hash) {
+      const section = document.querySelector(location.hash);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   return (
     <>
-      <section className="home">
+      <section id="home" className="home">
         <h1 className="home-title">Julie Gastineau</h1>
         <p className="home-subtitle">Développeuse Web Full-Stack</p>
         <p className="home-description">
@@ -23,35 +28,21 @@ export default function Home() {
           je crée des expériences web modernes, accessibles et élégantes.
         </p>
         <div className="home-buttons">
-          <Button to="/projects">Mes projets</Button>
-          <Button to="/contact">Me contacter</Button>
+          <Button to="/#projects">Mes projets</Button>
+          <Button to="/#contact">Me contacter</Button>
         </div>
       </section>
 
-      <section className="home-about">
+      <section id="about">
         <About />
       </section>
 
-      <section className="home-projects">
-        <h2>Mes projets</h2>
+      <section id="projects">
+        <Projects />
+      </section>
 
-        <div className="project-filters">
-          {['Tous', 'Front-end', 'Back-end', 'SEO'].map((category) => (
-            <button
-              key={category}
-              className={filter === category ? 'active' : ''}
-              onClick={() => setFilter(category)}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-
-        <div className="projects-grid">
-          {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+      <section id="contact">
+        <Contact />
       </section>
     </>
   );

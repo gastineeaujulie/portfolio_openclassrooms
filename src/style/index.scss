@@ -16,3 +16,8 @@
 //Import des pages
 @use './pages/Project' as *;
 @use './pages/Home' as *;
+
+
+html {
+    scroll-behavior: smooth;
+}
