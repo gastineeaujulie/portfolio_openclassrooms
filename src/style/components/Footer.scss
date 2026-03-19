@@ -1,6 +1,21 @@
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+
 .footer {
-    background-color: black;
-    color: white;
+    background-color: $bg-primary;
+    color: $text-secondary;
+    font-family: $font-body;
+    font-size: $font-size-sm;
     text-align: center;
-    padding: 2rem;
+    padding: 30px 0;
+    border-top: 1px solid $color-accent-green;
+
+    p {
+        margin: 0;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+        font-size: 14px;
+        padding: 25px 0;
+    }
 }

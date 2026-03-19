@@ -2,21 +2,25 @@
 @use '../global/mixins' as *;
 
 .btn {
-  @include flex-center;
-  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  width: auto;
+  padding: 10px 25px;
+  border-radius: $border-radius;
   background-color: $color-primary;
   color: $text-primary;
-  font-weight: $font-bold;
-  border: none;
-  border-radius: $border-radius;
-  cursor: pointer;
+  text-decoration: none;
+  font-family: $font-body;
+  font-size: $font-size-base;
+  text-align: center;
   transition: all 0.3s ease;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-accent-pink;
   }
 
   @include mobile {
+    width: auto;
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
   }

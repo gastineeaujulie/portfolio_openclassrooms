@@ -2,137 +2,78 @@
 @use '../global/mixins' as *;
 
 .home {
-    padding: 5rem 2rem;
     background-color: $bg-primary;
     color: $text-primary;
+    font-family: $font-body;
+    padding: 80px 20px;
     text-align: center;
 
     .home-title {
-        font-family: $font-title;
-        font-size: 4rem;
-        margin-bottom: 1rem;
+        font-family: $font-logo;
+        font-size: $font-size-xl;
+        font-weight: $font-bold;
+        color: $color-primary;
+        margin-bottom: 20px;
     }
 
     .home-subtitle {
-        font-family: $font-body;
-        font-size: 1.5rem;
+        font-family: $font-alt-title;
+        font-size: $font-size-lg;
+        font-weight: $font-regular;
+        margin-bottom: 15px;
         color: $text-secondary;
-        margin-bottom: 2rem;
     }
 
     .home-description {
-        font-size: 1.25rem;
-        color: $text-secondary;
-        margin-bottom: 3rem;
+        font-size: $font-size-base;
         max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 30px auto;
+        line-height: 1.6;
+        color: $text-primary;
     }
 
     .home-buttons {
         display: flex;
-        gap: 1rem;
         justify-content: center;
-        flex-wrap: wrap;
-    }
+        gap: 20px;
 
-    @include mobile {
+        // button {
+        //     background-color: $color-primary;
+        //     color: $text-primary;
+        //     padding: 10px 25px;
+        //     border-radius: $border-radius;
+        //     border: none;
+        //     font-size: $font-size-base;
+        //     cursor: pointer;
+        //     transition: all 0.3s ease;
+
+        //     &:hover {
+        //         background-color: $color-accent-pink;
+        //     }
+        // }
+    }
+}
+
+/* Responsive */
+@media (max-width: $breakpoint-tablet) {
+    .home {
+        padding: 120px 5% 60px 5%;
+
         .home-title {
-            font-size: 2rem;
+            font-size: 28px;
         }
 
         .home-subtitle {
-            font-size: 1.125rem;
+            font-size: 18px;
         }
 
         .home-description {
-            font-size: 1rem;
-            padding: 0 1rem;
+            font-size: 15px;
         }
 
         .home-buttons {
-            gap: 0.5rem;
-        }
-    }
-}
-
-.home-projects {
-    text-align: center;
-
-    h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .projects-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-    }
-}
-
-.project-filters {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-
-    button {
-        background: #f1f1f1;
-        border: none;
-        padding: 0.5rem 1rem;
-        border-radius: 20px;
-        cursor: pointer;
-        transition: background 0.2s;
-
-        &.active {
-            background: #007bff;
-            color: #fff;
-        }
-
-        &:hover {
-            background: #e0e0e0;
-        }
-    }
-}
-
-.project-card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 1.5rem;
-    cursor: pointer;
-    width: 250px;
-    transition: transform 0.3s, box-shadow 0.3s;
-
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .card-content h3 {
-        margin-bottom: 0.5rem;
-        color: #333;
-    }
-
-    .card-content p {
-        color: #555;
-        margin-bottom: 1rem;
-        text-align: left;
-    }
-
-    .project-tech {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-bottom: 0.5rem;
-
-        span {
-            background: #f1f1f1;
-            padding: 0.3rem 0.6rem;
-            border-radius: 5px;
-            font-size: 0.8rem;
+            flex-direction: column;
+            gap: 15px;
         }
     }
 }

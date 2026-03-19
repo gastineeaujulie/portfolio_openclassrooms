@@ -1,3 +1,6 @@
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
@@ -13,41 +16,46 @@
 }
 
 .project-card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 1.5rem;
+    background-color: $bg-section;
+    border-radius: $border-radius;
+    padding: 20px;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: 250px; // largeur fixe pour desktop
+    transition: all 0.3s ease;
+    text-align: left;
 
     &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
 
     h3 {
-        margin-bottom: 0.5rem;
-        color: #333;
+        font-family: $font-title;
+        font-weight: $font-bold;
+        font-size: $font-size-lg;
+        color: $color-primary;
+        margin-bottom: 10px;
     }
 
     p {
-        color: #555;
-        margin-bottom: 0.8rem;
+        font-size: $font-size-base;
+        color: $text-primary;
+        margin-bottom: 15px;
     }
 
     .project-tech {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: 10px;
 
         span {
-            background: #f1f1f1;
-            padding: 0.3rem 0.6rem;
-            border-radius: 5px;
-            font-size: 0.8rem;
+            background-color: $color-accent-green;
+            color: $text-primary;
+            padding: 5px 10px;
+            border-radius: $border-radius;
+            font-size: 14px;
         }
     }
+
 
     // Mobile / Tablette
     @media (max-width: 768px) {

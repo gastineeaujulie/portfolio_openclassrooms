@@ -1,3 +1,5 @@
+import Button from '../components/Button.jsx';
+
 export default function Contact() {
   return (
     <section id="contact" className="contact">
@@ -8,7 +10,7 @@ export default function Contact() {
         <input type="text" placeholder="Nom" required />
         <input type="email" placeholder="Email" required />
         <textarea placeholder="Message" required></textarea>
-        <button type="submit">Envoyer</button>
+        <Button type="submit">Envoyer</Button>
       </form>
 
       <div className="contact-info">
@@ -17,20 +19,15 @@ export default function Contact() {
       </div>
 
       <div className="contact-links">
-        <a
-          href="https://github.com/gastineeaujulie"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <Button to="https://github.com/gastineeaujulie" external>
           GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/julie-gastineau-8773b3243/"
-          target="_blank"
-          rel="noreferrer"
+        </Button>
+        <Button
+          to="https://www.linkedin.com/in/julie-gastineau-8773b3243/"
+          external
         >
           LinkedIn
-        </a>
+        </Button>
       </div>
     </section>
   );
