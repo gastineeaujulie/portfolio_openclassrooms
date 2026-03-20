@@ -1,6 +1,36 @@
 @use '../global/variables' as *;
 @use '../global/mixins' as *;
 
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: $color-primary-text;
+    color: $bg-primary;
+    padding: 8px 16px;
+    z-index: 9999;
+    border-radius: $border-radius;
+
+    &:focus {
+        top: 10px;
+    }
+}
+
+.logo {
+    font-family: $font-logo;
+    font-size: $font-size-xl;
+    font-weight: $font-bold;
+    color: $color-primary-text;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:focus-visible {
+        outline: 2px solid $color-primary-text;
+        outline-offset: 4px;
+        border-radius: 4px;
+    }
+}
+
 .header {
     background-color: $bg-primary;
     color: $text-primary;
