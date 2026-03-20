@@ -1,5 +1,6 @@
 @use '../global/variables' as *;
 @use '../global/mixins' as *;
+@use '../components/skills';
 
 .project-detail {
     background-color: $bg-primary;
@@ -32,68 +33,56 @@
         text-align: center;
     }
 
-    .project-tech {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-        margin-bottom: 40px;
 
-        span {
-            background-color: $color-accent-green;
-            color: $text-primary;
-            padding: 5px 10px;
-            border-radius: $border-radius;
-            font-size: $font-size-base;
-        }
+
+}
+
+.project-description,
+.project-objectifs,
+.project-achievement,
+.project-result {
+    background-color: $bg-section;
+    border-radius: $border-radius;
+    padding: 20px;
+    margin-bottom: 30px;
+
+    h3 {
+        font-family: $font-title;
+        font-weight: $font-bold;
+        font-size: $font-size-lg;
+        color: $color-primary;
+        margin-bottom: 10px;
     }
 
-    .project-description,
-    .project-objectifs,
-    .project-achievement,
-    .project-result {
-        background-color: $bg-section;
+    p {
+        font-size: $font-size-base;
+        line-height: 1.6;
+        color: $text-primary;
+        margin-bottom: 10px;
+    }
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    a {
+        background-color: $color-primary;
+        color: $text-primary;
+        text-decoration: none;
+        padding: 10px 25px;
         border-radius: $border-radius;
-        padding: 20px;
-        margin-bottom: 30px;
+        font-size: $font-size-base;
+        transition: all 0.3s ease;
 
-        h3 {
-            font-family: $font-title;
-            font-weight: $font-bold;
-            font-size: $font-size-lg;
-            color: $color-primary;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: $font-size-base;
-            line-height: 1.6;
-            color: $text-primary;
-            margin-bottom: 10px;
-        }
-    }
-
-    .project-links {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 20px;
-
-        a {
-            background-color: $color-primary;
-            color: $text-primary;
-            text-decoration: none;
-            padding: 10px 25px;
-            border-radius: $border-radius;
-            font-size: $font-size-base;
-            transition: all 0.3s ease;
-
-            &:hover {
-                background-color: $color-accent-pink;
-            }
+        &:hover {
+            background-color: $color-accent-pink;
         }
     }
 }
+
 
 /* Responsive */
 @media (max-width: $breakpoint-tablet) {

@@ -1,3 +1,4 @@
+import { techIcons } from '../data/techIcons';
 import '../style/sections/About.scss';
 
 export default function About() {
@@ -27,17 +28,12 @@ export default function About() {
 
         <div className="about-skills">
           <h3>Compétences</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Sass</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>Figma</li>
-            <li>GitHub</li>
+          <ul className="skills-icons">
+            {Object.entries(techIcons).map(([name, icon]) => (
+              <li key={name} data-tooltip={name}>
+                <img src={icon} alt={name} />
+              </li>
+            ))}
           </ul>
         </div>
       </div>

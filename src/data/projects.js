@@ -25,7 +25,7 @@ export const projects = [
     ],
     github: 'https://github.com/gastineeaujulie/kasa_project.git',
     live: 'https://gastineeaujulie.github.io/kasa_project/',
-    image: '/assets/grimoire.png',
+    image: '/assets/kasa.png',
     category: 'Front-end',
   },
   {

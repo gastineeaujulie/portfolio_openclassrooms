@@ -1,0 +1,16 @@
+export const techIcons = {
+  React: '/assets/icons/react.svg',
+  'React Router': '/assets/icons/reactrouter.svg',
+  Sass: '/assets/icons/sass.svg',
+  Vite: '/assets/icons/vite.svg',
+  'JavaScript ES6+': '/assets/icons/javascript.svg',
+  Figma: '/assets/icons/figma.svg',
+  GitHub: '/assets/icons/github.svg',
+  'Node.js': '/assets/icons/nodejs.svg',
+  Express: '/assets/icons/expressjs.svg',
+  MongoDB: '/assets/icons/mongodb.svg',
+  HTML: '/assets/icons/html5.svg',
+  CSS: '/assets/icons/css.svg',
+  Lighthouse: '/assets/icons/lighthouse.svg',
+  Accessibilité: '/assets/icons/accessibility.svg',
+};

@@ -1,5 +1,6 @@
 @use '../global/variables' as *;
 @use '../global/mixins' as *;
+@use '../components/skills';
 
 
 .about {
@@ -36,30 +37,13 @@
     }
 
     .about-skills {
-        margin-top: 2rem;
-
         h3 {
-            margin-bottom: 1rem;
             font-family: $font-title;
             font-weight: $font-bold;
+            font-size: $font-size-lg;
             color: $color-primary;
-        }
-
-        ul {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-
-            li {
-                background-color: $bg-primary;
-                color: $text-primary;
-                padding: 0.5rem 1rem;
-                border-radius: 20px;
-                border: 1px solid $color-accent-green;
-                font-size: $font-size-base;
-            }
+            margin-bottom: 2rem;
+            margin-top: 2rem;
         }
     }
 }

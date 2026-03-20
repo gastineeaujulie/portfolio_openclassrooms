@@ -1,4 +1,5 @@
 import { projects } from '../data/projects.js';
+import { techIcons } from '../data/techIcons.js';
 import { useParams, Navigate } from 'react-router-dom';
 import '../style/pages/Project.scss';
 
@@ -23,9 +24,15 @@ export default function Project() {
         </div>
       )}
 
-      <div className="project-tech">
-        {project.tech.map((tech, index) => (
-          <span key={index}>{tech}</span>
+      <div className="skills-icons">
+        {project.tech.map((tech) => (
+          <div key={tech} className="tech-item" data-tooltip={tech}>
+            {techIcons[tech] ? (
+              <img src={techIcons[tech]} alt={tech} />
+            ) : (
+              <span className="tech-badge">{tech}</span>
+            )}
+          </div>
         ))}
       </div>
 
