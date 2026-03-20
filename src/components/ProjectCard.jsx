@@ -1,15 +1,13 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../style/components/ProjectCard.scss';
 
 export default function ProjectCard({ project }) {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate(`/projects/${project.id}`);
-  };
-
   return (
-    <article className="project-card" onClick={handleClick}>
+    <Link
+      to={`/projects/${project.id}`}
+      className="project-card"
+      aria-label={`Voir le projet ${project.title}`}
+    >
       <div className="card-content">
         <h3>{project.title}</h3>
         <p>{project.resume}</p>
@@ -22,6 +20,6 @@ export default function ProjectCard({ project }) {
           ))}
         </div>
       </div>
-    </article>
+    </Link>
   );
 }

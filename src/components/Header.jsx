@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../style/components/Header.scss'; // optionnel, pour le style
+import '../style/components/Header.scss';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,21 +10,32 @@ export default function Header() {
       <div className="header-container">
         <span className="logo">JG</span>
 
-        {/* Burger */}
-        <div
+        <button
           className={`burger ${menuOpen ? 'open' : ''}`}
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+          aria-expanded={menuOpen}
+          aria-controls="main-nav"
         >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
 
-        {/* Menu Navigation*/}
-        <nav className={`nav ${menuOpen ? 'active' : ''}`}>
+        <nav
+          id="main-nav"
+          className={`nav ${menuOpen ? 'active' : ''}`}
+          aria-label="Navigation principale"
+        >
           <ul className="nav-list">
             <li>
-              <Link to="/" onClick={() => setMenuOpen(false)}>
+              <Link
+                to="/"
+                onClick={() => {
+                  setMenuOpen(false);
+                  setTimeout(() => window.scrollTo(0, 0), 50);
+                }}
+              >
                 Accueil
               </Link>
             </li>
