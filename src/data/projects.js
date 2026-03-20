@@ -46,11 +46,11 @@ export const projects = [
     tech: [
       'HTML',
       'CSS',
-      'SEO',
       'Accessibilité',
       'Lighthouse',
-      'Wave',
       'Schema.org',
+      'SEO',
+      'Wave',
     ],
     github: 'https://github.com/gastineeaujulie/Nina-Carducci-Dev.git ',
     live: 'https://gastineeaujulie.github.io/Nina-Carducci-Dev/',
@@ -72,7 +72,7 @@ export const projects = [
       "API back-end complète et fonctionnelle, connectée avec succès au front-end React existant. Authentification sécurisée opérationnelle, gestion des livres et notations fonctionnelle, et images optimisées automatiquement pour réduire l'empreinte écologique du site. ",
     propositions:
       'Ajouter une pagination sur les listes de livres, mettre en place des tests unitaires sur les routes API, et renforcer la sécurité avec une gestion plus fine des rôles utilisateurs.',
-    tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'API RESTful'],
+    tech: ['Node.js', 'Express', 'MongoDB', 'Multer', 'Bcrypt', 'JWT'],
     github: 'https://github.com/gastineeaujulie/Mon_vieux_grimoire.git ',
     image: '/assets/grimoire.png',
     category: 'Back-end',

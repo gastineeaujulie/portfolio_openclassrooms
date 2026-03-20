@@ -15,12 +15,11 @@ export default function ProjectCard({ project }) {
         <p>{project.resume}</p>
 
         <div className="project-tech">
-          {project.tech.map(
-            (tech, index) => (
-              (<img key={index} src={tech} alt="tech-logo" />),
-              (<span key={index}>{tech}</span>)
-            )
-          )}
+          {project.tech.map((tech) => (
+            <span key={tech} className="tech-item">
+              {tech}
+            </span>
+          ))}
         </div>
       </div>
     </article>

@@ -6,8 +6,8 @@
   width: auto;
   padding: 10px 25px;
   border-radius: $border-radius;
-  background-color: $color-primary;
-  color: $text-primary;
+  background-color: $color-primary-text;
+  color: $bg-section;
   text-decoration: none;
   font-family: $font-body;
   font-size: $font-size-base;
@@ -17,6 +17,7 @@
 
   &:hover {
     background-color: $color-accent-pink;
+    color: $bg-section;
   }
 
   @include mobile {

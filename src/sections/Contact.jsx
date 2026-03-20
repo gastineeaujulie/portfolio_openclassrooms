@@ -12,9 +12,41 @@ export default function Contact() {
         action="https://formspree.io/f/xaqpvjle"
         method="POST"
       >
-        <input type="text" name="name" placeholder="Nom" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Message" required></textarea>
+        <div className="form-group">
+          <label htmlFor="name">Nom</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Votre nom"
+            required
+            aria-required="true"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Votre email"
+            required
+            aria-required="true"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Votre message"
+            required
+            aria-required="true"
+          ></textarea>
+        </div>
+
         <Button type="submit">Envoyer</Button>
       </form>
 

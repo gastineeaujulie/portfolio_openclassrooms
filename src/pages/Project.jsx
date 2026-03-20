@@ -25,15 +25,13 @@ export default function Project() {
       )}
 
       <div className="skills-icons">
-        {project.tech.map((tech) => (
-          <div key={tech} className="tech-item" data-tooltip={tech}>
-            {techIcons[tech] ? (
+        {project.tech
+          .filter((tech) => techIcons[tech])
+          .map((tech) => (
+            <div key={tech} className="tech-item" data-tooltip={tech}>
               <img src={techIcons[tech]} alt={tech} />
-            ) : (
-              <span className="tech-badge">{tech}</span>
-            )}
-          </div>
-        ))}
+            </div>
+          ))}
       </div>
 
       <div className="project-description">

@@ -12,7 +12,7 @@
         font-family: $font-title;
         font-weight: $font-bold;
         font-size: $font-size-xl;
-        color: $color-primary;
+        color: $color-primary-text;
         margin-bottom: 20px;
     }
 
@@ -29,6 +29,19 @@
         flex-direction: column;
         gap: 15px;
 
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            text-align: left;
+
+            label {
+                font-size: $font-size-sm;
+                color: $text-secondary;
+                font-family: $font-body;
+            }
+        }
+
         input,
         textarea {
             padding: 12px;
@@ -42,6 +55,11 @@
             &::placeholder {
                 color: $text-secondary;
             }
+
+            &:focus {
+                outline: 2px solid $color-primary-text;
+                outline-offset: 2px;
+            }
         }
 
         textarea {
@@ -50,8 +68,8 @@
         }
 
         button {
-            background-color: $color-primary;
-            color: $text-primary;
+            background-color: $color-primary-text;
+            color: $bg-section;
             border: none;
             border-radius: $border-radius;
             padding: 12px;
@@ -81,8 +99,8 @@
         gap: 20px;
 
         a {
-            background-color: $color-primary;
-            color: $text-primary;
+            background-color: $color-primary-text;
+            color: $bg-section;
             text-decoration: none;
             padding: 10px 20px;
             border-radius: $border-radius;
@@ -109,21 +127,28 @@
             font-size: 15px;
         }
 
-        .contact-form input,
-        .contact-form textarea {
-            font-size: 14px;
-            padding: 10px;
-        }
+        .contact-form {
 
-        .contact-form button,
-        .contact-links a {
-            font-size: 14px;
-            padding: 10px 15px;
+            input,
+            textarea {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
         }
 
         .contact-links {
             flex-direction: column;
             gap: 15px;
+
+            a {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
         }
     }
 }

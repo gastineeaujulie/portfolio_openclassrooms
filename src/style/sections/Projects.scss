@@ -12,7 +12,7 @@
         font-family: $font-title;
         font-weight: $font-bold;
         font-size: $font-size-xl;
-        color: $color-primary;
+        color: $color-primary-text;
         margin-bottom: 30px;
     }
 
@@ -32,9 +32,9 @@
 
             &.active,
             &:hover {
-                background-color: $color-primary;
-                color: $text-primary;
-                border-color: $color-primary;
+                background-color: $color-primary-text;
+                color: $bg-section;
+                border-color: $color-primary-text;
             }
         }
     }

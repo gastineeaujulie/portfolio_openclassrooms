@@ -28,7 +28,7 @@
         font-family: $font-title;
         font-weight: $font-bold;
         font-size: $font-size-xl;
-        color: $color-primary;
+        color: $color-primary-text;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -45,12 +45,13 @@
     border-radius: $border-radius;
     padding: 20px;
     margin-bottom: 30px;
+    margin-top: 30px;
 
     h3 {
         font-family: $font-title;
         font-weight: $font-bold;
         font-size: $font-size-lg;
-        color: $color-primary;
+        color: $color-primary-text;
         margin-bottom: 10px;
     }
 
@@ -69,7 +70,7 @@
     margin-top: 20px;
 
     a {
-        background-color: $color-primary;
+        background-color: $color-primary-text;
         color: $text-primary;
         text-decoration: none;
         padding: 10px 25px;
