@@ -52,7 +52,7 @@ export const projects = [
       'SEO',
       'Wave',
     ],
-    github: 'https://github.com/gastineeaujulie/Nina-Carducci-Dev.git ',
+    github: 'https://github.com/gastineeaujulie/Nina-Carducci-Dev.git',
     live: 'https://gastineeaujulie.github.io/Nina-Carducci-Dev/',
     image: '/assets/nina.png',
     category: 'SEO',
@@ -73,7 +73,7 @@ export const projects = [
     propositions:
       'Ajouter une pagination sur les listes de livres, mettre en place des tests unitaires sur les routes API, et renforcer la sécurité avec une gestion plus fine des rôles utilisateurs.',
     tech: ['Node.js', 'Express', 'MongoDB', 'Multer', 'Bcrypt', 'JWT'],
-    github: 'https://github.com/gastineeaujulie/Mon_vieux_grimoire.git ',
+    github: 'https://github.com/gastineeaujulie/Mon_vieux_grimoire.git',
     image: '/assets/grimoire.png',
     category: 'Back-end',
   },

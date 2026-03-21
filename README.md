@@ -22,8 +22,7 @@ Le site met en avant plusieurs réalisations front-end et back-end, avec une int
 
 - Affichage dynamique des projets
 - Système de filtres par catégorie (Front-end, Back-end, SEO)
-- Navigation entre les pages (Accueil, À Propos,
-- Projets, Contact)
+- Navigation entre les pages (Accueil, À Propos, Projets, Parcours, Contact)
 - Intégration des liens vers :
   - les repositories GitHub
   - les sites déployés

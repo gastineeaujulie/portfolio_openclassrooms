@@ -13,7 +13,7 @@ export default function Project() {
 
   return (
     <section className="project-detail">
-      <h1>{project.title}</h1>
+      <h2>{project.title}</h2>
 
       {project.image && (
         <div className="project-image">
