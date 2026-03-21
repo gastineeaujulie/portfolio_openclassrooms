@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
-import ErrorPage from './components/ErrorPage.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
 import Home from './pages/Home.jsx';
 import Project from './pages/Project.jsx';
 import Parcours from './pages/Parcours.jsx';
