@@ -1,0 +1,107 @@
+@use '../global/variables' as *;
+
+.parcours {
+    padding: 6rem 2rem;
+    max-width: 100%;
+    background-color: $bg-primary;
+    margin: 0 auto;
+    padding: 120px 1.5rem;
+
+    h2 {
+        font-family: $font-title;
+        font-size: $font-size-xl;
+        font-weight: $font-bold;
+        color: $color-primary-text;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+}
+
+.parcours-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+
+    .parcours-card {
+        width: 100%;
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.parcours-card {
+    background-color: $bg-section;
+    border-radius: $border-radius;
+    border: 1px solid rgba($color-primary-text, 0.15);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        border-color: rgba($color-primary-text, 0.45);
+    }
+
+    &__content {
+        padding: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: 100%;
+
+        h3 {
+            font-family: $font-title;
+            font-size: $font-size-lg;
+            font-weight: $font-bold;
+            color: $text-primary;
+        }
+
+        p {
+            font-family: $font-body;
+            font-size: $font-size-base;
+            color: rgba($text-primary, 0.6);
+            line-height: 1.65;
+        }
+    }
+
+    &__period {
+        font-family: $font-body;
+        font-size: $font-size-sm;
+        color: $color-primary-text;
+        font-weight: $font-bold;
+    }
+
+    &__org {
+        font-family: $font-body;
+        font-size: $font-size-sm;
+        color: $text-secondary;
+    }
+}
+
+.parcours-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.skill-item {
+    font-family: $font-body;
+    font-size: $font-size-sm;
+    color: $text-secondary;
+    background-color: rgba($color-accent-lavender, 0.1);
+    border: 1px solid rgba($color-accent-lavender, 0.25);
+    border-radius: calc($border-radius / 2);
+    padding: 0.2rem 0.65rem;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .parcours {
+        padding: 4rem 1.5rem;
+    }
+
+    .parcours-grid {
+        grid-template-columns: 1fr;
+    }
+}

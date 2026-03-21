@@ -1,6 +1,12 @@
 @use './global/variables' as *;
 @use './global/mixins' as *;
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bg-primary;
+}
 
 html {
   scroll-behavior: smooth;
