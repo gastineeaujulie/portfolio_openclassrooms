@@ -1,16 +1,85 @@
-# React + Vite
+# Portfolio – Développeuse Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Ce projet est un portfolio développé dans le cadre de la formation OpenClassrooms.
+Il a pour objectif de présenter mes compétences, mes projets ainsi que mes informations de contact.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Le site met en avant plusieurs réalisations front-end et back-end, avec une interface moderne, responsive et optimisée pour l'expérience utilisateur.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies utilisées
 
-## Expanding the ESLint configuration
+- ⚛️ React
+- ⚡ Vite
+- 🎨 Sass (SCSS)
+- 🔀 React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Fonctionnalités
+
+- Affichage dynamique des projets
+- Système de filtres par catégorie (Front-end, Back-end, SEO)
+- Navigation entre les pages (Accueil, À Propos,
+- Projets, Contact)
+- Intégration des liens vers :
+  - les repositories GitHub
+  - les sites déployés
+
+- Design responsive (mobile, tablette, desktop)
+- Composants réutilisables
+
+---
+
+## Structure du projet
+
+```
+src/
+│──assets/
+│── components/
+│── data/
+│── pages/
+│── sections/
+│── style/
+│── App.jsx
+│── main.jsx
+```
+
+---
+
+## Installation
+
+### 1. Cloner le projet
+
+git clone https://github.com/gastineeaujulie/portfolio_openclassrooms.git
+
+### 2. Accéder au dossier
+
+cd portfolio
+
+### 3. Installer les dépendances
+
+npm install
+
+### 4. Lancer le projet
+
+npm run dev
+
+---
+
+## Déploiement
+
+Le projet est déployé via :
+
+- Vercel
+
+## Auteur
+
+Julie Gastineau
+Développeuse Web Full-Stack en formation
+
+## Licence
+
+Ce projet est un projet pédagogique réalisé dans le cadre de la formation OpenClassrooms.
