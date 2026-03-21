@@ -1,7 +1,23 @@
+import { useState } from 'react';
 import Button from '../components/Button.jsx';
 import '../style/sections/Contact.scss';
 
 export default function Contact() {
+  const [errors, setErrors] = useState({ name: '', email: '' });
+
+  const handleSubmit = (e) => {
+    const form = e.target;
+    const newErrors = {
+      name: form.name.value.trim() ? '' : 'Veuillez entrer votre nom.',
+      email: form.email.value.trim() ? '' : 'Veuillez entrer votre email.',
+    };
+
+    if (newErrors.name || newErrors.email) {
+      e.preventDefault();
+      setErrors(newErrors);
+    }
+  };
+
   return (
     <section id="contact" className="contact">
       <h2>Contact</h2>
@@ -11,6 +27,8 @@ export default function Contact() {
         className="contact-form"
         action="https://formspree.io/f/xaqpvjle"
         method="POST"
+        onSubmit={handleSubmit}
+        noValidate
       >
         <div className="form-group">
           <label htmlFor="name">Nom</label>
@@ -19,9 +37,14 @@ export default function Contact() {
             id="name"
             name="name"
             placeholder="Votre nom"
-            required
             aria-required="true"
+            onChange={() => setErrors((prev) => ({ ...prev, name: '' }))}
           />
+          {errors.name && (
+            <span className="form-error" role="alert">
+              {errors.name}
+            </span>
+          )}
         </div>
 
         <div className="form-group">
@@ -31,9 +54,14 @@ export default function Contact() {
             id="email"
             name="email"
             placeholder="Votre email"
-            required
             aria-required="true"
+            onChange={() => setErrors((prev) => ({ ...prev, email: '' }))}
           />
+          {errors.email && (
+            <span className="form-error" role="alert">
+              {errors.email}
+            </span>
+          )}
         </div>
 
         <div className="form-group">
@@ -44,7 +72,7 @@ export default function Contact() {
             placeholder="Votre message"
             required
             aria-required="true"
-          ></textarea>
+          />
         </div>
 
         <Button type="submit">Envoyer</Button>
