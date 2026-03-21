@@ -51,6 +51,7 @@
             color: $text-primary;
             font-size: $font-size-base;
             font-family: $font-body;
+            width: 100%; // ← pleine largeur sur tous les écrans
 
             &::placeholder {
                 color: $text-secondary;
@@ -75,10 +76,16 @@
             padding: 12px;
             cursor: pointer;
             font-size: $font-size-base;
+            font-family: $font-body;
             transition: all 0.3s ease;
 
             &:hover {
                 background-color: $color-accent-pink;
+            }
+
+            &:focus-visible {
+                outline: 2px solid $color-primary-text;
+                outline-offset: 4px;
             }
         }
     }
@@ -90,12 +97,14 @@
         p {
             margin-bottom: 10px;
             color: $text-primary;
+            word-break: break-word; // ← évite le débordement de l'email sur mobile
         }
     }
 
     .contact-links {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap; // ← repli automatique
         gap: 20px;
 
         a {
@@ -110,14 +119,18 @@
             &:hover {
                 background-color: $color-accent-pink;
             }
+
+            &:focus-visible {
+                outline: 2px solid $color-primary-text;
+                outline-offset: 4px;
+            }
         }
     }
 }
 
-/* Responsive */
 @media (max-width: $breakpoint-tablet) {
     .contact {
-        padding: 60px 3%;
+        padding: 60px 5%; // ← 5% au lieu de 3%
 
         h2 {
             font-size: 28px;
@@ -131,23 +144,27 @@
 
             input,
             textarea {
-                font-size: 14px;
+                font-size: 16px; // ← 16px minimum sur iOS pour éviter le zoom auto
                 padding: 10px;
             }
 
             button {
                 font-size: 14px;
-                padding: 10px 15px;
+                padding: 12px;
+                width: 100%;
             }
         }
 
         .contact-links {
             flex-direction: column;
+            align-items: center;
             gap: 15px;
 
             a {
+                width: 100%;
+                text-align: center;
                 font-size: 14px;
-                padding: 10px 15px;
+                padding: 12px 15px;
             }
         }
     }

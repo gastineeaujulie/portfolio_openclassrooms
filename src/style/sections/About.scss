@@ -2,7 +2,6 @@
 @use '../global/mixins' as *;
 @use '../components/skills';
 
-
 .about {
     padding: 4rem 2rem;
     background-color: $bg-section;
@@ -34,6 +33,7 @@
         color: $text-primary;
         margin-bottom: 1rem;
         font-size: $font-size-base;
+        line-height: 1.7;
     }
 
     .about-skills {
@@ -45,13 +45,17 @@
             margin-bottom: 2rem;
             margin-top: 2rem;
         }
+
+        .skills-icons {
+            justify-content: center;
+        }
     }
 }
 
 /* Responsive */
 @media (max-width: $breakpoint-tablet) {
     .about {
-        padding: 3rem 1rem;
+        padding: 3rem 5%;
 
         h2 {
             font-size: 28px;
@@ -59,15 +63,18 @@
 
         .about-intro {
             font-size: 16px;
+            text-align: left;
         }
 
         p {
             font-size: 15px;
+            text-align: left;
         }
 
-        .about-skills ul li {
-            font-size: 14px;
-            padding: 0.4rem 0.8rem;
+        .about-skills {
+            h3 {
+                font-size: 18px;
+            }
         }
     }
 }

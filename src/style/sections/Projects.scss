@@ -5,7 +5,7 @@
     background-color: $bg-primary;
     color: $text-primary;
     font-family: $font-body;
-    padding: 80px 20px;
+    padding: 80px 5%;
     text-align: center;
 
     h2 {
@@ -17,6 +17,10 @@
     }
 
     .project-filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
         margin-bottom: 40px;
 
         button {
@@ -25,9 +29,9 @@
             border: 2px solid $text-secondary;
             border-radius: $border-radius;
             padding: 8px 20px;
-            margin: 0 5px;
             cursor: pointer;
             font-size: $font-size-base;
+            font-family: $font-body;
             transition: all 0.3s ease;
 
             &.active,
@@ -36,19 +40,24 @@
                 color: $bg-section;
                 border-color: $color-primary-text;
             }
+
+            &:focus-visible {
+                outline: 2px solid $color-primary-text;
+                outline-offset: 4px;
+            }
         }
     }
 
     .project-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 30px;
     }
 }
 
 @media (max-width: $breakpoint-tablet) {
     .projects {
-        padding: 60px 15px;
+        padding: 60px 5%;
 
         h2 {
             font-size: 28px;
@@ -56,8 +65,11 @@
 
         .project-filters button {
             padding: 6px 15px;
-            margin: 5px 3px;
             font-size: 14px;
+        }
+
+        .project-grid {
+            grid-template-columns: 1fr;
         }
     }
 }

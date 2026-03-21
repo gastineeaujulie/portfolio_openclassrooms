@@ -1,20 +1,6 @@
 @use '../global/variables' as *;
 @use '../global/mixins' as *;
 
-.projects-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem; // espace entre les cards
-
-    // Mobile / Tablette
-    @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem; // espace vertical
-    }
-}
-
 .project-card {
     background-color: $bg-section;
     border-radius: $border-radius;
@@ -24,6 +10,7 @@
     text-align: left;
     text-decoration: none;
     display: block;
+    color: $text-primary; // ← évite l'héritage de couleur du <Link>
 
     &:hover {
         transform: translateY(-5px);
@@ -50,12 +37,13 @@
         font-size: $font-size-base;
         color: $text-primary;
         margin-bottom: 15px;
+        line-height: 1.6;
     }
 
     .project-tech {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 8px;
 
         span {
             background: none;
@@ -66,10 +54,18 @@
             font-size: 14px;
         }
     }
+}
 
+@media (max-width: $breakpoint-tablet) {
+    .project-card {
+        width: 100%; // ← 100% au lieu de 90%, le padding du parent suffit
 
-    // Mobile / Tablette
-    @media (max-width: 768px) {
-        width: 90%; // prend presque toute la largeur
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 15px;
+        }
     }
 }

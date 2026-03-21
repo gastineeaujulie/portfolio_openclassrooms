@@ -9,6 +9,15 @@
     width: 100%;
     padding: 120px 5% 80px 5%;
 
+    h1 {
+        font-family: $font-title;
+        font-weight: $font-bold;
+        font-size: $font-size-xl;
+        color: $color-primary-text;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
     .project-image {
         width: 100%;
         max-width: 900px;
@@ -24,17 +33,10 @@
         }
     }
 
-    h1 {
-        font-family: $font-title;
-        font-weight: $font-bold;
-        font-size: $font-size-xl;
-        color: $color-primary-text;
-        margin-bottom: 20px;
-        text-align: center;
+    .skills-icons {
+        justify-content: center; // ← centre les icônes
+        margin-bottom: 30px;
     }
-
-
-
 }
 
 .project-description,
@@ -66,6 +68,7 @@
 .project-links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; // ← évite le débordement
     gap: 20px;
     margin-top: 20px;
 
@@ -81,36 +84,47 @@
         &:hover {
             background-color: $color-accent-pink;
         }
+
+        &:focus-visible {
+            outline: 2px solid $color-primary-text;
+            outline-offset: 4px;
+        }
     }
 }
-
 
 /* Responsive */
 @media (max-width: $breakpoint-tablet) {
     .project-detail {
-        padding: 120px 5% 60px 5%;
+        padding: 100px 5% 60px 5%; // ← réduit le padding top
 
         h1 {
-            font-size: 28px;
+            font-size: 26px;
+        }
+    }
+
+    .project-description,
+    .project-objectifs,
+    .project-achievement,
+    .project-result {
+        padding: 15px;
+
+        h3 {
+            font-size: 18px;
         }
 
-        .project-description,
-        .project-objectifs,
-        .project-achievement,
-        .project-result {
-            padding: 15px;
-
-            h3 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 15px;
-            }
+        p {
+            font-size: 15px;
         }
+    }
 
-        .project-links a {
-            padding: 8px 20px;
+    .project-links {
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            width: 100%;
+            text-align: center;
+            padding: 12px 20px;
             font-size: 14px;
         }
     }

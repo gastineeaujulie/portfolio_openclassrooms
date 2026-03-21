@@ -16,21 +16,6 @@
     }
 }
 
-.logo {
-    font-family: $font-logo;
-    font-size: $font-size-xl;
-    font-weight: $font-bold;
-    color: $color-primary-text;
-    cursor: pointer;
-    text-decoration: none;
-
-    &:focus-visible {
-        outline: 2px solid $color-primary-text;
-        outline-offset: 4px;
-        border-radius: 4px;
-    }
-}
-
 .header {
     background-color: $bg-primary;
     color: $text-primary;
@@ -54,7 +39,14 @@
             font-size: $font-size-xl;
             font-weight: $font-bold;
             color: $color-primary-text;
+            text-decoration: none;
             cursor: pointer;
+
+            &:focus-visible {
+                outline: 2px solid $color-primary-text;
+                outline-offset: 4px;
+                border-radius: 4px;
+            }
         }
 
         .burger {
@@ -64,7 +56,6 @@
             width: 25px;
             height: 20px;
             cursor: pointer;
-            // Reset styles bouton
             background: none;
             border: none;
             padding: 0;
@@ -102,28 +93,32 @@
                 gap: 25px;
                 list-style: none;
 
-                li {
-                    a {
-                        color: $text-primary;
-                        text-decoration: none;
-                        font-size: $font-size-base;
-                        transition: all 0.3s ease;
+                li a {
+                    color: $text-primary;
+                    text-decoration: none;
+                    font-size: $font-size-base;
+                    transition: all 0.3s ease;
 
-                        &:hover {
-                            color: $color-primary-text;
-                        }
+                    &:hover {
+                        color: $color-primary-text;
+                    }
 
-                        &:focus-visible {
-                            outline: 2px solid $color-primary-text;
-                            outline-offset: 4px;
-                            border-radius: 4px;
-                        }
+                    &:focus-visible {
+                        outline: 2px solid $color-primary-text;
+                        outline-offset: 4px;
+                        border-radius: 4px;
                     }
                 }
             }
         }
+    }
+}
 
-        @media (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
+    .header {
+        .header-container {
+            padding: 15px 5%;
+
             .burger {
                 display: flex;
             }
