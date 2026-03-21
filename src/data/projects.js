@@ -42,7 +42,7 @@ export const projects = [
     result:
       "Amélioration significative des scores Lighthouse en performance, accessibilité et SEO, temps de chargement réduit grâce à l'optimisation des images, référencement local activé et bugs fonctionnels corrigés — le tout documenté dans un rapport livré au client.",
     propositions:
-      'Mettre en place un lazy loading plus poussé, convertir les images au format WebP, et automatiser les audits de performance via une intégration continue.',
+      'Mettre en place un lazy loading plus poussé et automatiser les audits de performance via une intégration continue.',
     tech: [
       'HTML',
       'CSS',
