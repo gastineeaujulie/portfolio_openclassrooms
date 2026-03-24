@@ -13,7 +13,7 @@
         font-weight: $font-bold;
         font-size: $font-size-lg;
         color: $text-primary;
-        margin-bottom: 20px;
+        margin-bottom: 2.5rem;
     }
 
     p {
@@ -73,6 +73,7 @@
             padding: 12px;
             cursor: pointer;
             transition: all 0.3s ease;
+            margin-top: 1rem;
 
             &:focus-visible {
                 outline: 2px solid $color-primary-text;

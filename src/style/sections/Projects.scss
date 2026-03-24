@@ -13,7 +13,7 @@
         font-weight: $font-bold;
         font-size: $font-size-lg;
         color: $text-primary;
-        margin-bottom: 30px;
+        margin-bottom: 2.5rem;
     }
 
     .project-filters {
@@ -21,7 +21,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-        margin-bottom: 40px;
+        margin-bottom: 3rem;
 
         button {
             background: none;

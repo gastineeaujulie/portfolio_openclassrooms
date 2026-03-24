@@ -9,10 +9,10 @@
 
     h2 {
         font-family: $font-title;
-        font-size: $font-size-xl;
+        font-size: $font-size-lg;
         font-weight: $font-bold;
-        color: $color-primary-text;
-        margin-bottom: 2.5rem;
+        color: $text-primary;
+        margin-bottom: 3.5rem;
         text-align: center;
     }
 }
@@ -52,7 +52,7 @@
 
         h3 {
             font-family: $font-title;
-            font-size: $font-size-lg;
+            font-size: $font-size-h3;
             font-weight: $font-bold;
             color: $text-primary;
         }

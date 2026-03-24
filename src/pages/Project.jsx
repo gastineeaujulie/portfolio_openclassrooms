@@ -1,6 +1,7 @@
 import { projects } from '../data/projects.js';
 import { techIcons } from '../data/techIcons.js';
 import { useParams, Navigate } from 'react-router-dom';
+import Button from '../components/Button.jsx';
 import '../style/pages/Project.scss';
 
 export default function Project() {
@@ -57,14 +58,14 @@ export default function Project() {
 
       <div className="project-links">
         {project.github && (
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
+          <Button to={project.github} external>
             GitHub
-          </a>
+          </Button>
         )}
         {project.live && (
-          <a href={project.live} target="_blank" rel="noopener noreferrer">
+          <Button to={project.live} external>
             Voir le site
-          </a>
+          </Button>
         )}
       </div>
     </section>
