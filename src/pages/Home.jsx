@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <section id="home" className="home">
         <h1 className="home-title">Julie Gastineau</h1>
-        <p className="home-subtitle">Développeuse Web Full-Stack</p>
+        <h2 className="home-subtitle">Développeuse Web Full-Stack</h2>
         <p className="home-description">
           Passionnée par le développement front-end et le design d'interfaces,
           je crée des expériences web modernes, accessibles et élégantes.

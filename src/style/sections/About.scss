@@ -12,8 +12,8 @@
     h2 {
         font-family: $font-title;
         font-weight: $font-bold;
-        font-size: $font-size-xl;
-        color: $color-primary-text;
+        font-size: $font-size-lg;
+        color: $text-primary;
         margin-bottom: 1.5rem;
     }
 
@@ -23,14 +23,14 @@
     }
 
     .about-intro {
-        font-size: $font-size-lg;
+        font-size: $font-size-base;
         font-weight: $font-regular;
         margin-bottom: 1rem;
         color: $text-secondary;
     }
 
     p {
-        color: $text-primary;
+        color: $text-secondary;
         margin-bottom: 1rem;
         font-size: $font-size-base;
         line-height: 1.7;
@@ -41,7 +41,7 @@
             font-family: $font-title;
             font-weight: $font-bold;
             font-size: $font-size-lg;
-            color: $color-primary-text;
+            color: $text-primary;
             margin-bottom: 2rem;
             margin-top: 2rem;
         }

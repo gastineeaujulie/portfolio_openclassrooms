@@ -36,11 +36,12 @@
 
         .logo {
             font-family: $font-logo;
-            font-size: $font-size-xl;
+            font-size: $font-size-lg;
             font-weight: $font-bold;
-            color: $color-primary-text;
-            text-decoration: none;
-            cursor: pointer;
+            background: linear-gradient(135deg, #8b5fe2, #f05cc3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
 
             &:focus-visible {
                 outline: 2px solid $color-primary-text;

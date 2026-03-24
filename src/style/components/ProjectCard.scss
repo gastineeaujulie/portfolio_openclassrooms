@@ -28,14 +28,14 @@
     h3 {
         font-family: $font-title;
         font-weight: $font-bold;
-        font-size: $font-size-lg;
-        color: $color-primary-text;
+        font-size: $font-size-h3;
+        color: $text-primary;
         margin-bottom: 10px;
     }
 
     p {
         font-size: $font-size-base;
-        color: $text-primary;
+        color: $color-primary-text;
         margin-bottom: 15px;
         line-height: 1.6;
     }

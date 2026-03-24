@@ -6,8 +6,8 @@
   width: auto;
   padding: 10px 25px;
   border-radius: $border-radius;
-  background-color: $color-primary-text;
-  color: $bg-section;
+  background: linear-gradient(135deg, #8b5fe2, #f05cc3);
+  color: $text-primary;
   text-decoration: none;
   font-family: $font-body;
   font-size: $font-size-base;
@@ -16,8 +16,8 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $color-accent-pink;
-    color: $bg-section;
+    background: linear-gradient(135deg, #7f12fc, #2be412);
+    color: $text-primary;
   }
 
   @include mobile {

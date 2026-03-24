@@ -14,10 +14,13 @@
     text-align: center;
 
     .home-title {
+        background: linear-gradient(135deg, #8b5fe2, #f05cc3);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-family: $font-title;
         font-size: $font-size-xl;
         font-weight: $font-bold;
-        color: $color-primary-text;
         margin-bottom: 20px;
     }
 

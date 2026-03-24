@@ -20,14 +20,7 @@ export default function Header() {
       </a>
       <header className="header">
         <div className="header-container">
-          <Link
-            to="/"
-            className="logo"
-            aria-label="Retour à l'accueil"
-            onClick={() => setTimeout(() => window.scrollTo(0, 0), 50)}
-          >
-            JG
-          </Link>
+          <div className="logo">JG</div>
 
           <button
             className={`burger ${menuOpen ? 'open' : ''}`}

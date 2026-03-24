@@ -11,15 +11,15 @@
     h2 {
         font-family: $font-title;
         font-weight: $font-bold;
-        font-size: $font-size-xl;
-        color: $color-primary-text;
+        font-size: $font-size-lg;
+        color: $text-primary;
         margin-bottom: 20px;
     }
 
     p {
         font-size: $font-size-base;
         margin-bottom: 30px;
-        color: $text-primary;
+        color: $color-primary-text;
     }
 
     .contact-form {
@@ -69,19 +69,10 @@
         }
 
         button {
-            background-color: $color-primary-text;
-            color: $bg-section;
             border: none;
-            border-radius: $border-radius;
             padding: 12px;
             cursor: pointer;
-            font-size: $font-size-base;
-            font-family: $font-body;
             transition: all 0.3s ease;
-
-            &:hover {
-                background-color: $color-accent-pink;
-            }
 
             &:focus-visible {
                 outline: 2px solid $color-primary-text;
@@ -108,17 +99,9 @@
         gap: 20px;
 
         a {
-            background-color: $color-primary-text;
-            color: $bg-section;
             text-decoration: none;
             padding: 10px 20px;
-            border-radius: $border-radius;
-            font-size: $font-size-base;
             transition: all 0.3s ease;
-
-            &:hover {
-                background-color: $color-accent-pink;
-            }
 
             &:focus-visible {
                 outline: 2px solid $color-primary-text;
