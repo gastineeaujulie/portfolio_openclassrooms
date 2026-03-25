@@ -103,9 +103,18 @@
                     text-decoration: none;
                     font-size: $font-size-base;
                     transition: all 0.3s ease;
+                    border: 0.5px solid transparent;
 
                     &:hover {
-                        color: $color-accent-green;
+                        color: rgb(238, 241, 224);
+                        text-shadow:
+                            0 0 5px rgb(2, 153, 22),
+                            0 0 10px rgb(2, 153, 22),
+                            0 0 20px rgb(2, 153, 22),
+                            0 0 40px rgb(2, 153, 22),
+                            0 0 80px rgb(2, 153, 22);
+                        transition: color 0.3s ease, text-shadow 0.3s ease;
+
                     }
 
                     &:focus-visible {

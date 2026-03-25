@@ -7,14 +7,15 @@
     padding: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    text-align: left;
-    text-decoration: none;
+    border: 1px solid transparent;
     display: block;
-    color: $text-primary; // ← évite l'héritage de couleur du <Link>
+    color: $text-primary;
 
     &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 0 2px #01470a77,
+            0 0 30px 6px rgba(2, 245, 75, 0.35);
+        border-color: #015e0d81;
+        transform: translateY(-2px);
     }
 
     &:focus-visible {
